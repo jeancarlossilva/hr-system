@@ -24,7 +24,7 @@ public class PayrollService {
 	private UserFeing userFeing;
 	
 	public Payroll getPayment(Long workedId, Payroll payroll) {
-		System.out.println("PAYROLL_SERVICE :: Get request on " + env.getProperty("local.serve.port") + " port");
+		System.out.println("PAYROLL_SERVICE :: Get request on " + env.getProperty("local.server.port") + " port");
 		try {
 			User user = userFeing.findById(workedId).getBody();
 			if(Objects.nonNull(user)) {
