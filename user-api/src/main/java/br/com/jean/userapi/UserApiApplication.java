@@ -23,7 +23,7 @@ public class UserApiApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		User newUser = new User(null, "", "", "", 20.0);
+		User newUser = new User(null, "Jean", "jean@mail.com", "123", 20.0);
 		
 		userRepositroy.save(newUser);
 	}
